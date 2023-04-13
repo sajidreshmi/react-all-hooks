@@ -7,11 +7,12 @@ import ImperativeHandle from './UseImperativeHandle/ImperativeHandle'
 import RefTutorial from './UseRef/RefTutorial'
 import MemoTutorial from './UseMemo/MemoTutorial'
 import CallBackTutorial from './UseCallback/CallbackTutorial'
+import ContentTemplateExample from './UseContext/templateBased'
 
 function App() {
     return (
         <div className='App'>
-            <ImperativeHandle />
+            <ContentTemplateExample />
         </div>
     )
 }
