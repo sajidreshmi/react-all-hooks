@@ -1,16 +1,25 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 
 function RefTutorial() {
-    const inputRef = useRef(null)
-
-    const onClick = () => {
-        inputRef.current.value = ''
+    const renderCount = useRef(1)
+    const [name, setName] = useState('')
+    const inputRef = useRef()
+    useEffect(() => {
+      renderCount.current ++
+    
+     
+    })
+    function focus () {
+        inputRef.current.focus()
     }
     return (
         <div>
-            <h1>Hello</h1>
-            <input type='text' placeholder='Ex...' ref={inputRef} />
-            <button onClick={onClick}>Change Name</button>
+            <h1>Hello</h1> {name}
+            <div>
+            <input type='text' placeholder='Ex...' onChange={(e)=>setName(e.target.value)} ref={inputRef}/>
+                </div>
+            <div>I rendered {renderCount.current} times</div>
+            <button onClick={focus}>Focus input</button>
         </div>
     )
 }

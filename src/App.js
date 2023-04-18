@@ -12,7 +12,7 @@ import ContentTemplateExample from './UseContext/templateBased'
 function App() {
     return (
         <div className='App'>
-            <ContentTemplateExample />
+            <ReducerTutorial />
         </div>
     )
 }
