@@ -8,11 +8,12 @@ import RefTutorial from './UseRef/RefTutorial'
 import MemoTutorial from './UseMemo/MemoTutorial'
 import CallBackTutorial from './UseCallback/CallbackTutorial'
 import ContentTemplateExample from './UseContext/templateBased'
+import UseTransitionDemo from './UseTransition/UseTransitionDemo'
 
 function App() {
     return (
         <div className='App'>
-            <ReducerTutorial />
+            <UseTransitionDemo />
         </div>
     )
 }
